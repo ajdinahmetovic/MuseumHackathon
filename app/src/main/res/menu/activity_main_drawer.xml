@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="All exhibitions" />
+        <item
+            android:id="@+id/nav_most_popular"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Most popular exhibitions" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Museum map" />
+    </group>
+
+    <item android:title="Departments">
+        <menu>
+            <item
+                android:id="@+id/nav_archeology"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Archeology" />
+            <item
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_menu_send"
+                android:title="History" />
+
+            <item
+                android:id="@+id/nav_nat_history"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Natural history" />
+
+            <item
+                android:id="@+id/nav_ethnology"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ethnology" />
+
+            <item
+                android:id="@+id/nav_art"
+                android:icon="@drawable/ic_menu_send"
+                android:title="History art" />
+
+
+        </menu>
+    </item>
+
+</menu>
