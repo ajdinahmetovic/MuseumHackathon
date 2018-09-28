@@ -86,7 +86,14 @@ public class MainActivity extends AppCompatActivity
         //main nav
         if (id == R.id.nav_all) {
 
+            transaction.replace(R.id.fragmentFrame, new AllExhibitions());
+            transaction.commit();
+            System.out.println("Aaa");
+
         } else if (id == R.id.nav_most_popular) {
+            transaction.replace(R.id.fragmentFrame, new PopularExhibtions());
+            transaction.commit();
+            System.out.println("Aaaaaa");
 
         } else if (id == R.id.nav_map) {
 
@@ -96,12 +103,12 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_history) {
 
-        } else if (id == R.id.nav_archeology){
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
