@@ -2,6 +2,7 @@ package com.example.ahmet.museumhackathon;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
@@ -30,7 +31,7 @@ public class ViewDialog {
             }
         });
 
-        FragmentManager manager = activity.getFragmentManager();
+        FragmentManager manager = ((FragmentActivity) activity).getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.cameraFrame, new CodeScanner());
         transaction.commit();
