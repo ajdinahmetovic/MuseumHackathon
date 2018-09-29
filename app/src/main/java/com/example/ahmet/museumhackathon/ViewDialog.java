@@ -14,7 +14,6 @@ public class ViewDialog {
     public void showDialog (final Activity activity){
 
 
-
         final Dialog dialog = new Dialog(activity);
 
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

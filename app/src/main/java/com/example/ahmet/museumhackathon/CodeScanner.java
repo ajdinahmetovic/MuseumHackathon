@@ -129,14 +129,11 @@ public class CodeScanner extends Fragment {
                 final SparseArray<Barcode> qrcodes = detections.getDetectedItems();
                 if(qrcodes.size() != 0) {
                     long[] vibratePattern = {0,100,100};
-                    /*Vibrator vibrator = (Vibrator)getContext().getSystemService(Context.VIBRATOR_SERVICE);
+                    Vibrator vibrator = (Vibrator)getContext().getSystemService(Context.VIBRATOR_SERVICE);
                     vibrator.vibrate(vibratePattern,-1);
-                    */
-                    //System.out.println(qrcodes.valueAt(0).displayValue);
-                    if(qrcodes.valueAt(0).displayValue.length()==17) {
-                        final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getContext());
-                        // sharedPref.edit().putString("ID",qrcodes.valueAt(0).displayValue).commit();
-                        System.out.println(qrcodes.valueAt(0).displayValue);
+
+                    System.out.println(qrcodes.valueAt(0).displayValue);
+
 
 
                         /*
@@ -151,7 +148,7 @@ public class CodeScanner extends Fragment {
                         frame.removeAllViews();
                         frame.addView(sucess);
 */
-                    }
+
 
                 }
             }
