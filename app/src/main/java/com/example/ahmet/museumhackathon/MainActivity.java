@@ -25,12 +25,18 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.fragmentFrame, new AllExhibitions());
+        transaction.commit();
+
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
             }
         });
 
@@ -93,7 +99,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_most_popular) {
             transaction.replace(R.id.fragmentFrame, new PopularExhibtions());
             transaction.commit();
-            System.out.println("Aaaaaa");
 
         } else if (id == R.id.nav_map) {
 

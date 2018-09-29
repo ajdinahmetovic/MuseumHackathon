@@ -14,11 +14,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="height" value="512" />
-                            <entry key="outputName" value="ic_natural" />
+                            <entry key="height" value="480" />
+                            <entry key="outputName" value="ic_muzej" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="C:\Users\ahmet\Desktop\ikone\ikonice_natural.svg" />
-                            <entry key="width" value="512" />
+                            <entry key="sourceFile" value="C:\Users\ahmet\Desktop\muzej.svg" />
+                            <entry key="width" value="863" />
                           </map>
                         </option>
                       </PersistentState>
